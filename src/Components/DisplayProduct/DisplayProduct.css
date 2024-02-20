@@ -1,0 +1,414 @@
+.display-product-main{
+    display: flex;
+    /* justify-content: space-around; */
+    /* margin: 0 150px; */
+    justify-content: space-between;
+    gap: 100px;
+}
+.display-product{
+    padding: 160px 60px 0px 60px;
+}
+.main-image{
+    width: 300px;
+    height: 500px;
+    transform: rotate(90deg);
+    filter: drop-shadow(2px 2px 30px white);
+    /* object-fit: contain; */
+}
+.main-image:hover{
+    transition: 0.6s !important;
+}
+.product-images {
+    position: relative;
+    display: flex;
+    /* gap: 220px; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding-left: 20px;
+    box-shadow: 0 0 10px 0px rgb(69, 69, 69);
+
+    /* margin-left: 200px; */
+}
+
+/* .thumbnail-images {
+    gap: 25px;
+    margin-top: 20px;
+} */
+.thumbnail-images{
+    position: absolute;
+    right: 40px;
+}
+.thumbnail-images img {
+    /* object-fit: cover; */
+    width: 75px; 
+    height: 140px;
+    opacity: 75%;
+    transition: all 0.5s;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    filter: drop-shadow(0px 0px 25px white);
+}
+.thumbnail-images img:hover{
+    opacity: 100%;
+}
+.product-main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Додайте це для вертикального вирівнювання */
+}
+.product-main-info h1{
+    font-size: 38px;
+    margin-bottom: 70px;
+    /* margin-left: 30px */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    /* text-decoration: underline; */
+}
+
+
+/* .product-main-info h1::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    margin-top: 10%;
+} */
+
+.product-main-characteristics-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.product-main-characteristics-item p{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}  
+  .product-main-characteristics-item div {
+    flex: 0 0 calc(50% - 10px);
+    box-sizing: border-box;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .product-main-characteristics-item dt {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .product-main-characteristics-item dd {
+    margin: 0;
+    color: #555;
+    font-size: 18px;
+  }
+    
+  .product-main-characteristics-item p{
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 800ms ease;   
+  }
+
+.product-main-characteristics-item p:hover,
+.product-main-characteristics-item.active{
+    color: #FF7A00;
+    cursor: pointer;
+
+}
+  
+
+/* --------------------------Navigation -------------------------*/
+.display-product-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px
+}
+.display-product-additional{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.display-product-additional h2{
+    opacity: 50%;
+    transition: all 0.6s;
+}
+.display-product-additional :hover{
+    opacity: 100%;
+}   
+.display-product-actions{
+    display: flex;
+    gap: 25px;
+}
+.display-product-additional::before {
+    content: '';
+    width: 72px;
+    height: 3px;
+    background: #232323;
+    position: absolute;
+    transform: rotate(90deg); /* колір лінії */
+    margin-left: 35px;
+}
+
+.display-product-descr{
+    margin-top: 20px;
+    color: white;
+    font-family: 'Inder' sans-serif;
+    font-size: 19px;
+}
+.display-product-descr.hidden{
+    display: none;
+}
+
+/*-----------------------------Revedbewhjbfe ------------------------*/
+
+.display-product-comments{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.display-product-comments.hidden{
+    display: none;
+}
+.display-product-comments button{
+    max-width: 100%;
+    padding: 8px;
+    width: 100px;
+    border: none;
+    transition: all 0.5s;
+
+}
+.display-product-comments button:hover{
+    color: white;
+    background: #FF7A00;
+}
+.display-product-comments-items:first-child{
+    display: flex;
+    gap: 10px;
+}
+/* .display-product-comments-items:first-child:hover{
+    color: #FF7A00;
+} */
+.display-product-comments-items{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+@media screen and (max-width: 1888px) {
+    /* .main-image{
+        width: 300px;
+        height: 300px;
+    } */
+    .display-product-main{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .product-main-characteristics {
+        width: 100%; /* Додано ширину 100% */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* Додайте ці стилі в медіа-запит для екранів шириною до 1660px */
+@media screen and (max-width: 925px) {
+    /* .product-images {
+      flex-direction: column;
+      gap: 0;
+    } */
+    .main-image{
+        height: 380px;
+        width: 150px;
+    }
+    .thumbnail-images {
+        /* display: flex; */
+        gap: 100px;
+        align-items: center;
+        bottom: 0;
+        justify-content: center;
+    }
+  
+    .thumbnail-images img {
+      width: 50px;
+      height: 90px;
+      opacity: 75%;
+      transition: all 0.5s;
+      margin-bottom: 25px;
+      margin-top: 20px;
+    }
+    .product-images {
+        gap: 163px;
+    }
+  }
+
+  @media screen and (max-width: 690px) {
+    .thumbnail-images{
+        display: none;
+    }
+    .main-image{
+        /* width: 125px;
+        height: 250px; */
+        width: 225px;
+        height: 310px;
+    }
+    .display-product{
+        padding: 110px 20px 0 20px;
+    }
+    .display-product-additional{
+        cursor: none;
+    }
+
+  }
+  @media screen and (max-width: 580px){
+    .product-main-info h1{
+        font-size: 20px;
+        width: 240px;
+    }
+
+  }
+  @media screen and (max-width: 470px){
+    .main-image{
+        /* width: 100px;
+        height: 200px; */
+        width: 160px;
+        height: 280px;
+    }
+    .product-main-info h1{
+        margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 440px){
+    .display-product-navigation{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .display-product-actions {
+        order: -1;
+    }
+    .main-image {
+        /* width: 78px;
+        height: 150px; */
+        width: 125px;
+        height: 200px;
+    }
+  }
+  @media screen and (max-width: 440px){
+    .display-product-comments-items:not(:first-child) {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    
+  }
+.product-images-slider{
+    filter: drop-shadow(0px 0px 8px white);
+    margin: 0 auto;
+    width: 65%;
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+}
+.slider-container{
+    display: flex;
+}
+.slider-product-item:first-child{
+    transform: rotate(90deg);
+}
+/* .slider-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+} */
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    transform: translate(0, -50%);
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.previous:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.slider-product-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.slider-product-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.slider-product-item.active {
+    opacity: 1;
+}
+@media screen and (max-width: 768px) {
+    .product-images-slider{
+        width: 100%;
+        height: 300px;
+    }
+}
+.zoomed {
+    transform: scale(1.5); /* наприклад, збільшення в 1.5 рази */
+    transition: transform 0.3s ease; /* анімація збільшення */
+}
+
+/* .slider{
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 0 10px 0px rgb(69, 69, 69);
+}
+.slider-image{
+    display: flex;
+    transition: all 1s ease;
+} */
+  
+
+   
+  /* Додайте ці стилі для екранів шириною від 1661px і вище */
+  /* @media screen and (max-width: 768px) {
+    .product-images {
+        flex-direction: column;
+    }
+
+    .main-image {
+        width: 100px;
+        height: auto;
+    }
+    .thumbnail-images{
+        display: flex;
+    }
+    .thumbnail-images img {
+        display: flex;
+        width: 50px;
+        height: 50px;
+    }
+} */
+
+  

@@ -1,0 +1,71 @@
+.slider{
+    margin-top: 100px;
+    position: relative;
+    right: 0;
+    /* width: calc(100% - 50px); */
+    height: 500px;
+    display: block;
+    width: 100%;
+    /* background-image: url(../Assets/slide1.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+@media screen and (max-width: 768px){
+    .slider{
+        width: 100%;
+        max-height: 100px;
+    }
+    .slider .item img{
+        object-fit: cover;
+        width: 100px;
+        max-height: 200px;
+    }
+    .slider .previous, .slider .next{
+        font-size: 12px;
+    }
+}
+
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    display: none;
+}
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+.slider .item img{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    right: 0;
+    position: relative;
+    transition: 2s ease;
+
+}
+.slider .previous, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    transform: translate(0, -50%);
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}

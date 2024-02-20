@@ -1,0 +1,223 @@
+.basket {
+    top: 50%;
+    left: 50%;
+    color: #000000;
+    border-radius: 30px;
+    border: 2px solid black;
+    background: linear-gradient(#FF7A00, #000000);
+    min-height: 400px;
+    min-width: 80%;
+    max-width: 500px; /* Можна змінити ширину кошика за вашими потребами */
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basket-empty {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.basket h1 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.basket h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+.basket p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.basket hr {
+    width: 300px;
+}
+
+.basket-with-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.basket-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    background: #FDFDFD;
+    border-radius: 20px 0px 0px 20px;
+    position: relative;
+    padding-right: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.basket-items img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.basket-items-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.basket-items-info h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.basket-items-info p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.basket-with-items-footer {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.basket-with-items-footer h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    color: white;
+}
+
+.b {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.b p {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: #6f6f6f;
+}
+
+.basket-with-items-footer button {
+    color: white;
+    background: black;
+    border: 1px solid white;
+    padding: 8px;
+    transition: all 1s ease;
+    font-size: 15px;
+}
+
+.basket-with-items-footer button:hover {
+    color: black;
+    background: white;
+}
+
+.basket-item-ison-delete {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .basket-items-info h2 {
+        font-size: 15px;
+    }
+    .basket-items-info p {
+        font-size: 13px;
+    }
+    .basket-item-ison-delete {
+        cursor: none;
+    }
+    .basket-items {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .basket-items img {
+        width: 80px;
+        height: 80px;
+    }
+    .basket-items-info h2 {
+        font-size: 12px;
+    }
+    .basket-with-items-footer h2 {
+        font-size: 22px;
+    }
+    .basket-with-items-footer button {
+        font-size: 12px;
+        padding: 4px;
+    }
+    .basket-with-items{
+        padding: 20px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .b {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .b p {
+        order: 1;
+    }
+    .basket-with-items-footer h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .basket h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .basket-items img {
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .basket-item-ison-delete {
+        width: 15px;
+    }
+    .b p {
+        font-size: 8px;
+    }
+    .basket-items-info h2 {
+        font-size: 10px;
+    }
+    .basket-items-info p {
+        font-size: 8px;
+    }
+    .basket-with-items-footer {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 20px;
+    }
+    .basket h2 {
+        font-size: 12px;
+    }
+}
