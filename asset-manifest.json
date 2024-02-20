@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/guitar/static/css/main.bac4bc19.css",
+    "main.js": "/guitar/static/js/main.ed00ed20.js",
+    "static/js/592.bf6ca574.chunk.js": "/guitar/static/js/592.bf6ca574.chunk.js",
+    "static/media/pexels-maurício-mascaro-11995853.jpg": "/guitar/static/media/pexels-maurício-mascaro-11995853.42b9634a06e35a06d0d1.jpg",
+    "static/media/img1_pr2.jpg": "/guitar/static/media/img1_pr2.752861d6fd493add27c6.jpg",
+    "static/media/pexels-stephen-niemeier-65718.jpg": "/guitar/static/media/pexels-stephen-niemeier-65718.7ba13f62ac209fc6e8d0.jpg",
+    "static/media/Group 83.jpg": "/guitar/static/media/Group 83.b886a85d05026f9a6728.jpg",
+    "static/media/Deluxe Acoustic.Satin See Thru Black.01.png": "/guitar/static/media/Deluxe Acoustic.Satin See Thru Black.01.412cd325a392edab0253.png",
+    "static/media/pexels-amirhossein-hasani-16546739.jpg": "/guitar/static/media/pexels-amirhossein-hasani-16546739.910ea7f33b4c1d180c82.jpg",
+    "static/media/img2_pr1.jpg": "/guitar/static/media/img2_pr1.62be7ccdbfb5f9dffcc9.jpg",
+    "static/media/img2_pr3.jpg": "/guitar/static/media/img2_pr3.5e5894487af7420b1d56.jpg",
+    "static/media/img2_pr2.jpg": "/guitar/static/media/img2_pr2.60a998345f3c959f1bd6.jpg",
+    "static/media/img1_pr11.jpg": "/guitar/static/media/img1_pr11.09b6f8dafc8ce627e70b.jpg",
+    "static/media/pexels-markus-spiske-92069.jpg": "/guitar/static/media/pexels-markus-spiske-92069.4898a897eb59636a7ad6.jpg",
+    "static/media/pexels-pixabay-164729.jpg": "/guitar/static/media/pexels-pixabay-164729.11b54844797bc421edd4.jpg",
+    "static/media/img1_pr3.jpg": "/guitar/static/media/img1_pr3.5ac93fcd120596385972.jpg",
+    "static/media/product_img3.png": "/guitar/static/media/product_img3.281634448def7c8a6188.png",
+    "static/media/product_img2.png": "/guitar/static/media/product_img2.e267f0497b55cc87abc6.png",
+    "static/media/product_img1.png": "/guitar/static/media/product_img1.f2491cd3bd75eee49a84.png",
+    "index.html": "/guitar/index.html",
+    "main.bac4bc19.css.map": "/guitar/static/css/main.bac4bc19.css.map",
+    "main.ed00ed20.js.map": "/guitar/static/js/main.ed00ed20.js.map",
+    "592.bf6ca574.chunk.js.map": "/guitar/static/js/592.bf6ca574.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bac4bc19.css",
+    "static/js/main.ed00ed20.js"
+  ]
+}
